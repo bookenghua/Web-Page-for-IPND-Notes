@@ -1,22 +1,32 @@
 # Webpage-for-IPND-Notes
 [IPND] Stage 1: Make a Web Page
 
-Use of Syntax
+## Stage 1 Details
+In this stage, I used HTML and CSS to structure and beautify notes about the new concepts and skills I've learned so far.
 
-HTML and `CSS` files pass an automated validation check
+## Stage 1 Rubric Objectives
 
-Logical `HTML` Structure
+### Code Review
 
-Conceptually related content is contained within a container element (`<span>` or `<div>` for example)
+#### Use of Syntax
+- HTML and `CSS` files pass an automated validation check
 
-`HTML` Classes
+#### Logical `HTML` Structure
+- Conceptually related content is contained within a container element (`<span>` or `<div>` for example)
 
-Related container elements have the same class name
+#### `HTML` Classes
+- Related container elements have the same class name
 
-`CSS` Styling
+#### `CSS` Styling
+- Class names are used in the `CSS` to style related elements
 
-Class names are used in the `CSS` to style related elements
+#### Use of `HTML` Tags
+- Page uses tags appropriately `(<p>` for paragraphs, `<h1>` for first header, etc.)
 
-Use of `HTML` Tags
+### Content Review
 
-Page uses tags appropriately `(<p>` for paragraphs, `<h1>` for first header, etc.)
+#### Content Display
+- Page displays at least 1 picture and some text
+
+## Additions Beyond Objectives
+- Created interactive table of contents
