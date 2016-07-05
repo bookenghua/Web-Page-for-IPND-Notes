@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- These notes were written on 05/11/15 for Stage 0 of Udacity's Introduction to Programming Nanodegree. Further edited on 06/19/16 for Stage 1. -->
+    <meta charset="UTF-8">
+    <title>Walter's Notes</title>
+    <link rel="stylesheet" type="text/css" href="IPND%20Stage%201.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab" rel="stylesheet">
+  </head>
+
+<!-- The <h1> tag (and subsequent heading tabs) reminds me of a similar function in Microsoft Word with the exception of manually customizing the headings with CSS here. -->
+
+  <body>
+    <h1>Table of Contents</h1>
+    <div class="TOC">
+      <ol>
+        <li class="TOC-lesson"><a href="#lesson-1">Lesson I: The Basics</a>
+          <ul>
+            <li><a href="#lesson-1-1">How the Web Works</a></li>
+            <li><a href="#lesson-1-2">HTML</a></li>
+            <li><a href="#lesson-1-3">Elements, Tags and Attributes</a></li>
+            <li><a href="#lesson-1-4">Key Takeaways</a></li>
+          </ul>
+        </li>
+        <li class="TOC-lesson"><a href="#lesson-2">Lesson II: HTML and CSS as languages</a>
+          <ul>
+            <li><a href="#lesson-2-1">A Simple Analogy</a></li>
+            <li><a href="#lesson-2-2">The Document Object Model (DOM)</a></li>
+            <li><a href="#lesson-2-3">The pencil is your best friend</a></li>
+          </ul>
+        </li>
+        <li class="TOC-lesson"><a href="#lesson-3">Lesson III: CSS - versatile and powerful</a>
+          <ul>
+            <li><a href="#lesson-3-1">Avoiding repetition is key</a></li>
+            <li><a href="#lesson-3-2">Understanding documentation</a></li>
+            <li><a href="#lesson-3-3">Code, Test, Refine</a></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <h1>Walter's Notes</h1>
+    <div class="lesson">
+      <h2 id="lesson-1">Lesson I: The Basics</h2>
+      <div class="concept" id="lesson-1-1">
+        <div class="concept-header">
+          How the Web Works
+        </div>
+        <div class="concept-explanation">
+          <p>
+            The web is not dissimilar to a marketplace where various agents congregate to exchange goods, services and ideas. There are, however, two main differences.
+          </p>
+          <p>
+            <em>1. Distance is a non-factor.</em>
+          </p>
+          <p>
+            <em>2. Computers act as proxies for their human counterparts.</em>
+          </p>
+          <p>
+            In other words, computers are taught to communicate with one another in a way which makes content not only intelligible to another computer but also meaningful to <em>humans.</em> Accessing a web page from a computing device seems deceptively simple. In reality, a multitude of processes are at work. When a person enters "www.google.com" into their <em>web browser</em> (on a computer/mobile computing device), their computer sends a <em>HTTP Request</em> - which is really one of many file transfer protocols - to a <em>server</em>. The server then finds the appropriate HTML document and sends it back to the user's computer where a <em>web browser</em> interprets the page and displays it on the user's screen.
+          </p>
+          <p>
+            It is useful to conceptualize the web as a cloud - a concentration of uncountable nodes - where the nodes are linked by the file transfer protocols. These links are probably where the synechdoche of internet as <em>information superhighway</em> originated from.
+          </p>
+          <div class="concept-visual">
+            <div class="image">
+              <img src=https://dl.dropboxusercontent.com/u/75005236/Components%20of%20the%20web.jpg width=564 alt="This is a concept map of the web">
+            </div>
+            <p>
+              <em>Adapted from <a href=https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/e-48329854/m-48480496> Components of the web</a></em>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="concept" id="lesson-1-2">
+        <div class="concept-header">
+          HTML
+        </div>
+        <div class="concept-explanation">
+          <p>
+            HTML stands for <em>Hypertext Markup Language.</em> HTML documents form the majority of the content on the web. HTML documents contain <em>text content</em> independent of <em>markup</em>. The former can be thought of as plain text while the latter modifies the plain text and changes how it looks.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-1-3">
+        <div class="concept-header">
+          Elements, Tags and Attributes
+        </div>
+        <div class="concept-explanation">
+          <p>
+            HTML documents are made of HTML <strong>elements</strong>. HTML elements are in turn comprised of <strong>tags</strong> and their respective contents. When writing HTML, we tell browsers the type of each element by using HTML tags such as
+          </p>
+          <strong>Inline Elements</strong>
+          <pre>
+            &lt;br&gt; - break
+            &lt;em&gt; <em>content</em> &lt;/em&gt; - emphasis/italics
+            &lt;img&gt; - image
+            &lt;a&gt; <em>content</em> &lt;/a&gt; - hyperlink
+            &lt;span&gt; <em>content</em> &lt;/span&gt; - grouping
+          </pre>
+          <strong> Block Elements</strong><br><br>
+          <pre>
+            &lt;p&gt; <em>content</em> &lt;/p&gt; - paragraph
+            &lt;div&gt; <em>content</em> &lt;/div&gt; - division
+            </pre>
+          <p>
+            <strong>Inline</strong> elements leave the structure and whitespace surrounding plain text alone while <strong>block</strong> elements form an "invisible box" around the content inside of them. It should also be noted that <code>&lt;br&gt;</code> is a <strong>void tag</strong> as there is no corresponding closing tag.
+          </p>
+          <p>
+            Within particluar tags, there may exist <strong>attributes</strong> which serve to further modify the instructions given by the tags which eventually modify the content. Exmaples include
+          </p>
+          <pre>
+            src
+            height
+            href
+          </pre>
+        </div>
+      </div>
+      <div class="concept" id="lesson-1-4">
+        <div class="concept-header">
+          Key Takeaways
+        </div>
+        <div class="concept-explanation">
+          <p>
+            Computers need to be told <em>exactly</em> what to do with extremely specific sets of instructions such that the communication process is made intelligible to all parties involved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="lesson-b">
+      <h2 id="lesson-2">Lesson II: HTML and CSS as languages</h2>
+      <div class="concept" id="lesson-2-1">
+        <div class="concept-header">
+          A Simple Analogy
+        </div>
+        <div class="concept-explanation">
+          <p>
+            HTML, CSS and Javascript are all languages used to perform different functions. Thinking about a house is useful. HTML can be thought of as the structure and general backbone of the house, CSS as the color of walls and rugs and Javascript as the garage door opener. Relating these ideas back to a webpage, HTML provides the structure of the webpage, CSS makes things interesting by providing exciting fonts and splashes of strategically placed colors while Javascript does the heavy lifting in terms of interactions with the user.
+          </p>
+          <p>
+            Covered in the next section will be yet another analogy - a tree diagram to represent the <em>Document Object Model (DOM)</em>
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-2-2">
+        <div class="concept-header">
+          The Document Object Model (DOM)
+        </div>
+        <div class="concept-explanation">
+          <p>
+            Frequently referred to as DOM and more endearingly termed as the <em>'tree-like structure'</em> by developers, this is a very important concept that aids our conceptual understanding about boxifying HTML elements. Similar to how a Russian Matryoshka doll has an <em>almost</em> infinite (well, not exactly but you get the idea) number of dolls within the mother doll, the indentation of HTML elements based on their opening and closing tags is interpreted by the browser with the help of DOM. The more indented the element, the more deeply it is nested.
+          </p>
+          <div class="concept-visual">
+            <div class="image">
+              <img src=https://dl.dropboxusercontent.com/u/75005236/Matryoshka%20Dolls.jpg alt="This is a picture of Matryoshka dolls">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="concept" id="lesson-2-3">
+        <div class="concept-header">
+          The pencil is your best friend
+        </div>
+        <div class="concept-explanation">
+          <p>
+            When writing code, always fall back on a trusty pencil when the going gets tough. Although it seems quite easy to boxify stuff in your mind, it gets pretty daunting after a while and it's easy to lose track of which tag belongs to which element. Things don't need to be that complex. Planning in advance with a pencil always helps.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="lesson">
+      <h2 id="lesson-3">Lesson III: CSS - versatile and powerful</h2>
+      <div class="concept" id="lesson-3-1">
+        <div class="concept-header">
+          Avoiding repetition is key
+        </div>
+        <div class="concept-explanation">
+          <p>
+            CSS stands for <em>Cascading Style Sheets</em>. It allows web programmers to add styles to a HTML document in a layered manner, where the most specific rule is applied. It therefore follows that HTML elements should be expressed in the most elegant manner such that style paramenters are defined within nested <strong>classes</strong> so that a simple change in the CSS file affects all targeted classes. In other words, avoid repetition.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-3-2">
+        <div class="concept-header">
+          Understanding documentation
+        </div>
+        <div class="concept-explanation">
+          <p>
+            Thinking like a programmer does not mean one has to memorize all the different types of CSS attributes and possible values that are applicable. What is more important is to grasp the general idea of each concept and then source for the necessary documentation whenever an unknown scenario crops up. Programmers must possess not only a good conceptual understanding of HTML and CSS but also be able to search for and interpret key pieces of documentation when in doubt.
+          </p>
+          <p>
+            For instance, it sure is necessary for programmers to understand and recall basic stuff like the <strong>class</strong> having no periods or punctuation marks. Similarly, one would do well remembering <strong>the box model</strong> where, from the outside in, an element consists of its <strong>margin, border, padding</strong> and <strong>content</strong>. Specific attributes like <strong>font-style</strong> and <strong>font-weight</strong> and their values can be obtained from a quick reference to existing documentation.
+          </p>
+        </div>
+      </div>
+      <div class="concept" id="lesson-3-3">
+        <div class="concept-header">
+          Code, Test, Refine
+        </div>
+        <div class="concept-explanation">
+          <p>
+            It is very helpful to start from first principles every time a programmer works on a project. A simple way to go about programming a webpage from start to end is by first laying out the structure through HTML, visually boxifying things into where natural boxes can be found. After which, the process more or less involves iteration where CSS is applied and the details can be ironed out and refined.
+          </p>
+          <p>
+            An intutitive 5-step solution is provided by Jessica in the Nanodegree course.<br><br>
+
+            1. Look for natural boxes<br>
+            2. Look for repeated styles and semantic elements<br>
+            3. Write HTML<br>
+            4. Apply styles (biggest --> smallest)<br>
+            5. Fix
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    
+    
+    
+    
+    
+  </body>
+</html>

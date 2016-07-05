@@ -1,0 +1,85 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size:18px;
+	font-weight: 300;
+	color: #848484;
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 48px;
+	font-weight: 300;
+	text-align: center;
+	color: #444444;	
+}
+
+.TOC {
+	background-color: #F6F6F6;
+	padding: 50px;
+	margin: 20px;
+	border-radius: 4px;
+}
+
+ul {
+	list-style-type: none; 
+}
+
+li {
+	font-size: 20px;
+	line-height: 44px; 
+}
+
+.lesson {
+	background-color: #3367D6;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.lesson-b {
+	background-color: #00BFA5;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+h2 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 26px;
+	font-weight: 300;
+	color: #FFFFFF;
+	margin: 8px;
+}
+
+.concept {
+	background-color: #F6F6F6;
+	padding: 50px;
+	margin: 20px;
+	border-radius: 4px;
+}
+
+.concept-header {
+	font-family: 'Roboto Slab', serif;
+	font-size: 22px;
+	margin: 8px;
+	text-align: center;
+	color: #444444;
+}
+
+.concept-explanation {
+	margin: 8px;
+}
+
+ pre {
+ 	white-space: pre-wrap;
+}
+
+img {
+	max-width: 100%;
+    height: auto;
+}
